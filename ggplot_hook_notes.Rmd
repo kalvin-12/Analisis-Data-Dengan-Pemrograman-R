@@ -1,0 +1,44 @@
+---
+title: "ggplot_hook"
+author: "Vin"
+date: "2024-02-17"
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+
+##Setting up my environment
+Notes : setting up my environment by loading the 'tidyverse' and 'palmer penguins' packages
+
+```{r loading packages}
+library(tidyverse)
+library(palmerpenguins)
+
+ggplot(data = penguins) + 
+  geom_point(mapping = aes(x=flipper_length_mm, y = body_mass_g,color=species,shape=species)) +
+  labs(title = "Palmer Penguins : Body Mass vs Flipper Length", subtitle = "Sample of Three Penguins Species", 
+       caption = "Data collected by Dr. Kristen Gorman")
+
+```
+
+```{r ggplot for penguin data}
+
+library(ggplot2)
+
+library(palmerpenguins)
+
+data(penguins)
+
+View(penguins)
+
+```
+
+
+```{r ggplot for penguin data visualization}
+
+ggplot(data = penguins) +
+
+geom_point(mapping = aes(x = flipper_length_mm, y = body_mass_g))
+
+```
