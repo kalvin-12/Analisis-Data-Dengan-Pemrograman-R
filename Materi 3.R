@@ -41,9 +41,14 @@ penguins %>%
 
 
 penguins %>%
-  rename(island_new=island)
+  rename(pulau=island)
 
 rename_with(penguins, toupper)
+
+flavors_df %>%
+  rename(Maker = Company)
+
+
 
 clean_names(penguins)
 
@@ -124,13 +129,29 @@ predicted_temp <- c(67.9, 69, 71.5, 70, 67, 69)
 bias(actual_temp, predicted_temp)
 
 
+flavors_of_cacao <- flavors_df
+
+
+trimmed_flavors_df <- flavors_df
+
+flavors_df %>%
+    select(Rating,`Cocoa
+Percent`)
+
+flavors_df %>%
+  rename(Company = `Company.
+(Maker-if.known)`)
+
+
+flavors_df %>%
+  filter(Rating >= 3.9, `Cocoa
+Percent` >= 75)
 
 
 
 
 
-
-Ujian
+#Ujian
 penguins %>% arrange(-bill_length_mm) %>% skim_without_charts(-bill_length_mm)
 skim_without_charts(ToothGrowth)
 

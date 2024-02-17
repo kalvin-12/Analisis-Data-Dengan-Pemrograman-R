@@ -73,6 +73,15 @@ Jumlah = buku + pensil + penghapus
 
 #readr yang digunakan untuk mengimpor data 
 read_csv()
+read.csv("flavors_of_cacao.csv")
+
+chocolate_df <-read_csv("flavors_of_cacao.csv")
+flavors_df <-read_csv("flavors_of_cacao.csv")
+
+col(flavors_df)
+colnames(flavors_df)
+arrange(flavors_df)
+
 
 #dplyr menawarkan serangkaian fungsi konsisten yang membantu untuk meyelesaian beberapa tugas manipulasi data umum
 

@@ -69,10 +69,11 @@ ggsave("Three Penguins Species.png")
 
 
 
+best_trimmed_flavors_df <- trimmed_flavors_df 
 
 
-
-
+ggplot(data = best_trimmed_flavors_df)+
+  geom_bar(mapping = aes(x=Rating))
 
 
 
@@ -89,6 +90,7 @@ ggplot(data = diamonds) +
   geom_bar(mapping = aes(x=cut,fill=cut))+
   facet_wrap(~cut)
 
-
+ggplot(data = best_trimmed_flavors_df) +
+  geom_bar(mapping = aes(x = Company.Location))
 
 
